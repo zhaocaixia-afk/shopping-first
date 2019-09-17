@@ -1,0 +1,17 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "id": 1,
+      "img_url": "../../images/1.png"
+    },
+    {
+      "id": 2,
+      "img_url": "../../images/2.jpg"
+    },
+    {
+      "id": 3,
+      "img_url": "../../images/3.jpg"
+    }
+  ]
+}

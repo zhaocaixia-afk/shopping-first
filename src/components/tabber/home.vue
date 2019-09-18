@@ -3,18 +3,18 @@
 <!--        轮播图区域 使用 Mint-UI里面的Swipe-->
         <mt-swipe :auto="4000">
             <mt-swipe-item v-for="item in lunbotu" :key="item.id">
-                <img :src="item.img_url">
+                <img :src="item.img">
             </mt-swipe-item>
         </mt-swipe>
 <!--        六宫格区域 使用 MUI的grid-default.html-->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-<!--                放置图片，修改不了图片大小-->
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newslist">
+<!--                放置图片，修改图片大小-->
                 <img src="../../images/xiaotubiao/menu1.png" alt="">
-                <div class="mui-media-body">新闻资讯</div></a></li>
-            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                <div class="mui-media-body">新闻资讯</div></router-link></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/photolist">
                 <img src="../../images/xiaotubiao/menu2.png" alt="">
-                <div class="mui-media-body">图片分享</div></a></li>
+                <div class="mui-media-body">图片分享</div></router-link></li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
                 <img src="../../images/xiaotubiao/menu3.png" alt="">
                 <div class="mui-media-body">商品购买</div></a></li>
@@ -44,7 +44,7 @@
         },
         methods:{
             getlunbotu(){
-                this.$axios.get('/lunbotu')
+                this.$axios.get('/api/getlunbo')
                     .then((result) => {
                         if (result.data.status == 0){
                             this.lunbotu = result.data.message;

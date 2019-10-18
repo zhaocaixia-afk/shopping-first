@@ -1,11 +1,6 @@
 <template>
     <div id="home">
 <!--        轮播图区域 使用 Mint-UI里面的Swipe-->
-<!--        <mt-swipe :auto="4000">-->
-<!--            <mt-swipe-item v-for="item in lunbotu" :key="item.id">-->
-<!--                <img :src="item.img">-->
-<!--            </mt-swipe-item>-->
-<!--        </mt-swipe>-->
 <!--        使用 封装好的轮播图 组件 传递 数据-->
 <!--        :isfull="true"宽度100%-->
         <swiper :lunbotu="lunbotu" :isfull="true"></swiper>

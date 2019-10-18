@@ -36,16 +36,6 @@ Vue.filter('dataFormat',function (str,pattern='YYYY-MM-DD HH:mm:ss') {
 //缩略图的引入
 import VuePreview from 'vue-preview'
 Vue.use(VuePreview)
-// Vue.use(preview, {
-//     mainClass: 'pswp--minimal--dark',
-//     barsSize: {top: 0, bottom: 0},
-//     captionEl: false,
-//     fullscreenEl: false,
-//     shareEl: false,
-//     bgOpacity: 0.85,
-//     tapToClose: true,
-//     tapToToggleControls: false
-// })
 //注册vuex
 import Vuex from 'vuex'
 Vue.use(Vuex)
@@ -75,7 +65,6 @@ var store = new Vuex.Store({
             }
             //当 更新 car 之后，把car数组，存储到本地的localStorage中
             localStorage.setItem('car',JSON.stringify(state.car))
-
         },
         updateGoodsInfo(state,goodsinfo){
             //修改购物车中商品的数量值

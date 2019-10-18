@@ -3,9 +3,6 @@
 <!--        顶部固定区域 使用 Mint-UI的 Header-->
         <mt-header fixed title="固定在顶部">
 <!--            不管 在那个页面都会跳到 根路径-->
-<!--            <router-link to="/" slot="left">-->
-<!--                <mt-button icon="back">返回</mt-button>-->
-<!--            </router-link>-->
             <span slot="left" @click="goBack()" v-show="flag">
                 <mt-button icon="back">返回</mt-button>
             </span>

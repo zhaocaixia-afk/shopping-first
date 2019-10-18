@@ -38,7 +38,6 @@
                     .then( res => {
                         if (res.data.status == 0){
                             this.imageinfo = res.data.message[0]
-                            // console.log(this.imageinfo);
                         }
                     })
             },

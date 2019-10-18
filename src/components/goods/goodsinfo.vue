@@ -85,7 +85,6 @@
                                 item.img = item.src;
                             })
                             this.lunbotu = res.data.message;
-                            // console.log(this.lunbotu);
                         }
                     })
             },

@@ -38,8 +38,6 @@
                 </div>
             </div>
         </div>
-
-<!--        <p>{{ this.$store.getters.getGoodsSelected}}</p>-->
     </div>
 </template>
 
@@ -68,7 +66,6 @@
                     .then( res => {
                         if (res.data.status == 0){
                             this.goodslist = res.data.message;
-                            // console.log(this.goodslist);
                         }
                     })
             },

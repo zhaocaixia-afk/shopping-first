@@ -38,7 +38,6 @@
                         if (res.data.status == 0){
                             res.data.message = this.goodslist.concat(res.data.message)
                             this.goodslist = res.data.message;
-                            // console.log(this.goodslist);
                         }
                     })
             },
